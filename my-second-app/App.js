@@ -4,65 +4,73 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-            <View >
-                  <View style={styles.frame}>
-                      <View  style={styles.Group}>
-                      <Text style={styles.hello}>Hello ,Devs</Text>
-                      <Text style={styles.subHeading}>14 tasks today</Text>
+    
+              <View style={styles.container}>
+                      <View >
+                            <View style={styles.frame}>
+                                <View  style={styles.Group}>
+                                <Text style={styles.hello}>Hello ,Devs</Text>
+                                <Text style={styles.subHeading}>14 tasks today</Text>
+                                </View>
+
+                                <View>
+                                <Image style={styles.profileImage}  source={require('./assets/person.jpg')}/> 
+                                </View>      
+                            </View>
+                      </View>   
+
+                      <View>
+                            <View style={styles.search}> 
+                            <Image style={styles.searchBox}  source={require('./assets/Search Boc.jpg')}/> 
+                            <Image style={styles.Filter}  source={require('./assets/Filter.jpg')}/>
+                            </View>
                       </View>
 
                       <View>
-                      <Image style={styles.profileImage}  source={require('./assets/person.jpg')}/> 
-                      </View>      
-                   </View>
-            </View>   
+                          <Text style={styles.categories}>Categories</Text>
+                      </View>
 
-            <View>
-                  <View style={styles.search}> 
-                   <Image style={styles.searchBox}  source={require('./assets/Search Boc.jpg')}/> 
-                   <Image style={styles.Filter}  source={require('./assets/Filter.jpg')}/>
-                  </View>
-            </View>
+                      <View>
+                          <View style={styles.Group9}>
+                            <View>
+                            <Image style={styles.categoryCard} source={require('./assets/Categories card.jpg')}/>
+                            </View>
 
-            <View>
-                 <Text style={styles.categories}>Categories</Text>
-            </View>
+                            <View>
+                            <Image style={styles.categoryCard2} source={require('./assets/Categories card (1).jpg')}/>
+                            </View>
 
-            <View>
-                <View style={styles.Group9}>
-                  <View>
-                  <Image style={styles.categoryCard} source={require('./assets/Categories card.jpg')}/>
-                  </View>
+                          </View>
 
-                  <View>
-                  <Image style={styles.categoryCard2} source={require('./assets/Categories card (1).jpg')}/>
-                  </View>
+                      </View>
 
-                </View>
+                      
+                      <View>
+                          <Text style={styles.outgoingTask}>Outgoin Task</Text>
+                      </View>
 
-            </View>
+                      <View>
+                      <Image style={styles.rectangle} source={require('./assets/Rectangle 4.jpg')}/>
+                      <Text style={styles.mobileappdevelopment}>Mobile App Development</Text>
+                      </View>
 
+                      <View>
+                      <Image style={styles.rectangle} source={require('./assets/Rectangle 4.jpg')}/>
+                      </View>
 
-            <View>
-                <View style={styles.Group9}>
-                  <View>
-                  <Image style={styles.categoryCard} source={require('./assets/Categories card.jpg')}/>
-                  </View>
+                      <View>
+                      <Image style={styles.rectangle} source={require('./assets/Rectangle 4.jpg')}/>
+                      </View>
 
-                  <View>
-                  <Image style={styles.categoryCard2} source={require('./assets/Categories card (1).jpg')}/>
-                  </View>
+                      <View>
+                      <Image style={styles.rectangle} source={require('./assets/Rectangle 4.jpg')}/>
+                      </View>
 
-                </View>
+                      
 
-            </View>
+                      
+              </View>
 
-
-            
-
-            
-    </View>
   );
 }
 
@@ -149,4 +157,25 @@ const styles = StyleSheet.create({
     top:30,
     width:155,
   },
+  outgoingTask: {
+    left:20,
+    top:50,
+    height:24,
+    width:120,
+    fontSize:20,
+    weight:700,
+    lineHeight:24,
+  },
+  rectangle: {
+    width:324,
+    height:128,
+    borderRadius:15,
+    left:15,
+    top:60,
+    marginBottom:20,
+  },
+  mobileappdevelopment: {
+    left:30,
+    top:-45,
+  }
 });
