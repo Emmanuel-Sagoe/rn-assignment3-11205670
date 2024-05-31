@@ -25,6 +25,42 @@ export default function App() {
                   </View>
             </View>
 
+            <View>
+                 <Text style={styles.categories}>Categories</Text>
+            </View>
+
+            <View>
+                <View style={styles.Group9}>
+                  <View>
+                  <Image style={styles.categoryCard} source={require('./assets/Categories card.jpg')}/>
+                  </View>
+
+                  <View>
+                  <Image style={styles.categoryCard2} source={require('./assets/Categories card (1).jpg')}/>
+                  </View>
+
+                </View>
+
+            </View>
+
+
+            <View>
+                <View style={styles.Group9}>
+                  <View>
+                  <Image style={styles.categoryCard} source={require('./assets/Categories card.jpg')}/>
+                  </View>
+
+                  <View>
+                  <Image style={styles.categoryCard2} source={require('./assets/Categories card (1).jpg')}/>
+                  </View>
+
+                </View>
+
+            </View>
+
+
+            
+
             
     </View>
   );
@@ -66,23 +102,51 @@ const styles = StyleSheet.create({
   height:45,
   width:46,
   borderRadius:30,
-left:114,
+  left:112,
   },
   search: {
     width:353,
     height:49,
     marginTop:30,
-    marginLeft:20,
+    left:20,
     flexDirection:'row',
   },
   searchBox: {
     borderRadius:10,
-    width:280,
+    width:260,
     height:48,
   },
   Filter: {
     width: 50,
     height:48,
+    left:20,
     borderRadius:10,
+  },
+  categories: {
+    left:20,
+    width:100,
+    height:24,
+    top:20,
+    weight:700,
+    fontSize:20,
+    lineHeight:24,
+  },
+  Group9: {
+    flexDirection:'row',
+  
+    
+  },
+  categoryCard: {
+    left:20,
+    borderRadius:10,
+    top:30,
+    width:160,
+  },
+  categoryCard2: {
+    left:30,
+    right:20,
+    borderRadius:10,
+    top:30,
+    width:155,
   },
 });
