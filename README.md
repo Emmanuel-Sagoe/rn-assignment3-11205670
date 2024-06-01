@@ -28,4 +28,4 @@ Usage: Used for displaying images in the app. It supports various image formats 
 
 # Screenshot of the App
 
-{(![screenshot](<my-second-app/assets/screenshot of app.jpg>))}
+![screenshot](<my-second-app/assets/screenshot of app.jpg>)
